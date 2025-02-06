@@ -1,0 +1,135 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import services from "../../config/services.json"
+import GeneralHero from "@/components/HeroSections/GeneralHero.astro";
+import { Image } from "astro:assets";
+import ser from "@/assets/img/about/serd.png"
+import Quote from "@/components/reactComponents/Quote.jsx";
+
+export async function getStaticPaths() {
+  return services.services.map((service: { title: string }) => ({
+    params: { 
+      slug: service.title.toLowerCase().replace(/ /g, '-')
+    }
+  }))
+}
+
+const { slug } = Astro.params;
+const service = services.services.find(
+  s => s.title.toLowerCase().replace(/ /g, '-') === slug
+);
+
+---
+<Layout>
+	<GeneralHero title={service?.title}/>
+<!-- Start of Service Details  section
+	============================================= -->
+	<section id="ori-service-details" class="ori-service-details-section position-relative">
+		<div class="container">
+			<div class="ori-service-details-content-wrapper">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="ori-service-details-content">
+							<div class="ori-about-play-area position-relative">
+								<div class="ori-about-play-img">
+									<Image src={ser} alt="">
+								</div>
+								
+							</div>
+							<div class="ori-service-details-text pera-content">
+								<h2>Description</h2>
+								<p>{service?.mainDescription}</p>
+								<!-- <p>In relation to websites and apps, UI design considers the look, feel, and interactivity of the product. It’s all about making sure that the user interface of a product is as intuitive as possible, and that means carefully considering each and every visual, interactive element the user might encounter.</p> -->
+								<div class="ori-service-details-process ul-li-block">
+									<h2>Service Process</h2>
+									<div class="ori-service-process-item-wrap d-flex flex-wrap">
+										{
+											service?.serviceProcess.map((process,index) => (
+											<div class="ori-service-process-item pera-content">
+											<h3><span>0{index}</span> {process.title} </h3>
+											<p>{process.description} </p>
+										</div>
+											))
+										}
+										
+									</div>
+								</div>
+								<div class="ori-service-details-outcome ul-li-block">
+									<h2>Service Outcome</h2>
+									<ul>
+										{
+											service?.serviceOutcome.map((outcome) => (
+											<li>{outcome} </li>
+											))
+										}
+									</ul>
+								</div>
+								<div class="ori-service-details-result">
+									<h2>Results</h2>
+									<div class="ori-service-details-result-item-wrap d-flex justify-content-between">
+										{
+											service?.results.map((result, index) => (
+											  <div  class="ori-about-circle-progress-item">
+												<div class="counter-boxed text-center headline position-relative">
+												  <div class="graph-outer">
+													<input 
+													  type="text" 
+													  class="dial" 
+													  data-fgColor="#FF7425" 
+													  data-bgColor="#fff" 
+													  data-width="180" 
+													  data-height="180" 
+													  data-linecap="round"  
+													  value={result.percent} 
+													  
+													/>
+													<div class="inner-text count-box">
+													  <span class="count-text text-center m-auto" data-stop={result.percent} data-speed="4500"></span>%
+													</div>
+												  </div>
+												  <h3 class="text-uppercase">{result.text}</h3>
+												</div>
+											  </div>
+											))
+										  }
+										  
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ori-service-details-sidebar-widget-area">
+							<div class="ori-service-details-widget ul-li-block">
+								<div class="category-widget">
+									<h3 class="widget-title">Services</h3>
+									<ul>
+										{
+											services.services.map((service,index) => (
+											<li><a href={service.slug}><span>0{index+1}</span> {service.title}</a></li>
+											))
+										}
+									</ul>
+								</div>
+							</div>
+							<Quote client:load/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>
+<!-- End of Service Details  section
+	============================================= -->	
+</Layout>

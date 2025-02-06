@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import ser1 from "@/assets/img/service/ser1.png"
+import ser2 from "@/assets/img/service/ser2.png"
+import ser3 from "@/assets/img/service/ser3.png"
+import ser from "@/assets/img/about/ser.png"
+---
+
+<!-- Start of Service section
+	============================================= -->
+	<section id="ori-service-inner-area" class="ori-service-inner-section position-relative">
+		<div class="container">
+			<div class="ori-service-content-1">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="ori-service-inner-item position-relative">
+							<div class="ori-service-more position-absolute">
+								<a href="/about"><i class="fas fa-arrow-right"></i></a>
+							</div>
+							<div class="ori-service-img-title position-relative">
+								<div class="ori-service-img">
+									<Image src={ser1} alt="">
+								</div>
+								<div class="ori-service-title text-center position-absolute">
+									<h3>About us  <i class="fal fa-arrow-right"></i></h3>
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ori-service-inner-item position-relative">
+							<div class="ori-service-more position-absolute">
+								<a href="/mission"><i class="fas fa-arrow-right"></i></a>
+							</div>
+							<div class="ori-service-img-title position-relative">
+								<div class="ori-service-img">
+									<Image src={ser2} alt="">
+								</div>
+								<div class="ori-service-title text-center position-absolute">
+									<h3>Our Mission  <i class="fal fa-arrow-right"></i></h3>
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ori-service-inner-item position-relative">
+							<div class="ori-service-more position-absolute">
+								<a href="/services"><i class="fas fa-arrow-right"></i></a>
+							</div>
+							<div class="ori-service-img-title position-relative">
+								<div class="ori-service-img">
+									<Image src={ser3} alt="">
+								</div>
+								<div class="ori-service-title text-center position-absolute">
+									<h3>Our approach  <i class="fal fa-arrow-right"></i></h3>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ori-service-why-choose">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="ori-service-why-choose-img">
+							<Image src={ser} alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ori-service-why-choose-text">
+							<div class="ori-inner-section-title">
+								<span class="sub-title text-uppercase">Why choose us</span>
+								<h2>Unlock Revenue Growth for Your Business
+								</h2>
+							</div>
+							<div class="ori-service-why-choose-list-item ul-li-block">
+								<ul>
+									<li>High Standards</li>
+									<li>Different Thinking</li>
+									<li>Business Innovation</li>
+									<li>Focus on People</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>
+<!-- End of Service section
+	============================================= -->

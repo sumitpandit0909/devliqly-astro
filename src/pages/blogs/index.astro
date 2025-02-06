@@ -1,0 +1,29 @@
+---
+import { client } from "@/lib/sanity";
+import Layout from "@/layouts/Layout.astro"
+import GeneralHero from "@/components/HeroSections/GeneralHero.astro"
+import BlogSection from "@/components/Sections/BlogSection.astro"
+const fetchData = async () => {
+    const query = `*[_type == "post"]{
+  title, 
+  slug, 
+  body, 
+  "mainImage": mainImage.asset->url, 
+  publishedAt, 
+  Excerpt, 
+  categories[]->{title}, 
+  author->{name}
+}`;
+    return await client.fetch(query);
+};
+
+const posts = await fetchData();
+// console.log(posts);
+
+---
+
+<Layout>
+    <GeneralHero title="Blogs"/>
+    <BlogSection posts={posts}/>
+    
+</Layout>

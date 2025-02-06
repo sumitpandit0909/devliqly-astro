@@ -1,22 +1,62 @@
-<!doctype html>
+---
+import '@/assets/css/bootstrap.min.css';
+import '@/assets/css/fontawesome-all.css';
+import '@/assets/css/animate.css';
+// import '@/assets/css/video.min.css';
+import '@/assets/css/slick-theme.css';
+import '@/assets/css/slick.css';
+import '@/assets/css/global.css';
+import '@/assets/css/style.css';
+import Header from '@/components/global/Header.astro';
+import Footer from '@/components/global/Footer.astro';
+---
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<head>
+	<meta charset="UTF-8">
+	<title>DEVLIQLY | WE BUILD YOUR IMAGINATION </title>
+	<meta name="description" content="Orixy - Digital Agency HTML Template
+	">
+	<meta name="keywords" content="advertising, advertising agency, agency, agency theme, business, creative agency, digital, digital advertising, digital agency, digital marketing, digital marketing agency, digital theme, marketing, startup">
+	<meta name="author" content="Themexriver">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+</head>
+<body class="ori-digital-studio">
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<div class="cursor"></div>
+	<Header/>
+		<slot />
+	<Footer/>
+	<!-- For Js Library -->
+	<script defer is:inline src="/js/jquery.min.js"></script>
+	<script defer is:inline src="/js/jquery-ui.min.js"></script>
+	<script defer is:inline src="/js/bootstrap.min.js"></script>
+	<script defer is:inline src="/js/popper.min.js"></script>
+	<script defer is:inline src="/js/appear.js"></script>
+	<script defer is:inline src="/js/slick.js"></script>
+	<script defer is:inline src="/js/twin.js"></script>
+	<script defer is:inline src="/js/wow.min.js"></script>
+	<script defer is:inline src="/js/knob.js"></script>
+	<script defer is:inline src="/js/jquery.filterizr.js"></script>
+	<script defer is:inline src="/js/imagesloaded.pkgd.min.js"></script>
+	<script defer is:inline src="/js/rbtools.min.js"></script>
+	<script defer is:inline src="/js/rs6.min.js"></script>
+	<script defer is:inline src="/js/jarallax.js"></script>
+	<script defer is:inline src="/js/jquery.inputarrow.js"></script>
+	<script defer is:inline src="/js/swiper.min.js"></script>
+	<script defer is:inline src="/js/jquery.counterup.min.js"></script>
+	<script defer is:inline src="/js/waypoints.min.js"></script>
+	<script defer is:inline src="/js/jquery.magnific-popup.min.js"></script>
+	<script defer is:inline src="/js/jquery.marquee.min.js"></script>
+	<script defer is:inline src="/js/script.js"></script>
+</body>
+
+</html>			

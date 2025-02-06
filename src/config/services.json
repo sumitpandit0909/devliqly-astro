@@ -1,0 +1,357 @@
+{
+  "services": [
+    {
+      "title": "Web Development",
+      "slug": "web-development",
+      "icon": "fal fa-laptop-code",
+      "description": "Custom websites with modern technologies.",
+      "mainDescription": "Web development involves creating dynamic, custom websites and web applications using the latest technologies. The goal is to ensure optimal functionality, fast performance, and responsive design that works seamlessly on all devices. A well-developed website increases user engagement, ensures smooth navigation, and provides a robust platform for business growth.",
+      "serviceProcess": [
+        {
+          "title": "Creative Analysis",
+          "description": "Research and evaluate the needs of the client to understand the goals and expectations."
+        },
+        {
+          "title": "Design & Sketches",
+          "description": "Create wireframes and mockups of the website layout and features based on analysis."
+        },
+        {
+          "title": "Prototype & Wireframing",
+          "description": "Develop interactive prototypes for user testing and client feedback."
+        },
+        {
+          "title": "Delivery & Deploy",
+          "description": "Final revisions are made before deploying the website on a live server."
+        }
+      ],
+      "serviceOutcome": [
+        "Excepteur sint occaecat cupidatat a deserunt mollit anim id est laborum.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+      ],
+      "results": [
+        {
+          "percent": "90%",
+          "text": "Product sales growing per month"
+        },
+        {
+          "percent": "85%",
+          "text": "Customer engagement rate"
+        },
+        {
+          "percent": "92%",
+          "text": "Increased site traffic"
+        }
+      ]
+    },
+    {
+      "title": "Game Development",
+      "slug": "game-development",
+      "icon": "fal fa-gamepad",
+      "description": "Engaging games for various platforms.",
+      "mainDescription": "Game development focuses on creating interactive and immersive gaming experiences across multiple platforms, including mobile, web, and desktop. It involves game design, coding, graphics, and testing to ensure that the game runs smoothly and provides a fun and engaging experience for players.",
+      "serviceProcess": [
+        {
+          "title": "Creative Analysis",
+          "description": "Gather information about the target audience and gameplay mechanics to create an engaging concept."
+        },
+        {
+          "title": "Concept & Design",
+          "description": "Design game levels, characters, and environments, ensuring a cohesive experience."
+        },
+        {
+          "title": "Development & Coding",
+          "description": "Write the game’s code to implement the game mechanics and functionalities."
+        },
+        {
+          "title": "Testing & Launch",
+          "description": "Conduct thorough testing and make final adjustments before launching the game."
+        }
+      ],
+      "serviceOutcome": [
+        "Intuitive gameplay for a seamless experience.",
+        "High-quality graphics and animations.",
+        "Optimized for smooth performance on all platforms."
+      ],
+      "results": [
+        {
+          "percent": "80%",
+          "text": "Game downloads per week"
+        },
+        {
+          "percent": "75%",
+          "text": "Increased user retention"
+        },
+        {
+          "percent": "85%",
+          "text": "Positive user reviews"
+        }
+      ]
+    },
+    {
+      "title": "AI Development",
+      "slug": "ai-development",
+      "icon": "fal fa-robot",
+      "description": "AI solutions for optimized user experiences.",
+      "mainDescription": "AI development involves creating intelligent systems that improve user experiences by automating tasks, analyzing data, and making informed decisions. By leveraging machine learning and natural language processing, AI solutions help businesses offer personalized, responsive, and innovative services to their users.",
+      "serviceProcess": [
+        {
+          "title": "AI Strategy Development",
+          "description": "Create a roadmap for implementing AI based on business needs and objectives."
+        },
+        {
+          "title": "Data Collection & Processing",
+          "description": "Collect and process relevant data to train machine learning models."
+        },
+        {
+          "title": "Model Training & Testing",
+          "description": "Train AI models using the processed data and test their accuracy."
+        },
+        {
+          "title": "Deployment & Monitoring",
+          "description": "Deploy the AI system and continuously monitor its performance and accuracy."
+        }
+      ],
+      "serviceOutcome": [
+        "Enhanced customer personalization.",
+        "Automation of repetitive tasks.",
+        "Improved decision-making through predictive analysis."
+      ],
+      "results": [
+        {
+          "percent": "95%",
+          "text": "Accuracy in AI predictions"
+        },
+        {
+          "percent": "80%",
+          "text": "Faster decision-making process"
+        },
+        {
+          "percent": "90%",
+          "text": "Customer satisfaction with AI-driven solutions"
+        }
+      ]
+    },
+    {
+      "title": "Web Designing",
+      "slug": "web-designing",
+      "icon": "fal fa-paint-brush",
+      "description": "Creative and responsive web designs.",
+      "mainDescription": "Web designing is all about crafting the visual layout, user interface, and overall user experience of a website. It ensures that the website is aesthetically pleasing, easy to navigate, and responsive across all devices. The focus is on making websites that are both functional and visually engaging.",
+      "serviceProcess": [
+        {
+          "title": "User Research & Analysis",
+          "description": "Conduct research to understand the needs of the target audience and business goals."
+        },
+        {
+          "title": "Wireframing & Mockups",
+          "description": "Create basic structures and design elements to layout the website’s content and functionality."
+        },
+        {
+          "title": "UI/UX Design",
+          "description": "Design visually appealing interfaces while ensuring an intuitive user experience."
+        },
+        {
+          "title": "Testing & Feedback",
+          "description": "Test the designs with users and gather feedback to make final refinements."
+        }
+      ],
+      "serviceOutcome": [
+        "Responsive designs for all devices.",
+        "Visually appealing interfaces.",
+        "Improved user experience and navigation."
+      ],
+      "results": [
+        {
+          "percent": "70%",
+          "text": "Reduction in bounce rate"
+        },
+        {
+          "percent": "60%",
+          "text": "Improvement in user engagement"
+        },
+        {
+          "percent": "90%",
+          "text": "Users find the interface intuitive"
+        }
+      ]
+    },
+    {
+      "title": "Graphic Designing",
+      "slug": "graphic-designing",
+      "icon": "fal fa-pen-nib",
+      "description": "Stunning visuals for digital media.",
+      "mainDescription": "Graphics designing involves creating visuals that communicate messages through digital art. From logos and banners to infographics and social media posts, this service helps businesses express their brand identity and engage their audience through powerful visual communication.",
+      "serviceProcess": [
+        {
+          "title": "Creative Brief & Research",
+          "description": "Work with the client to define the project scope, objectives, and visual style."
+        },
+        {
+          "title": "Concept & Design",
+          "description": "Design graphics based on the research and client’s brand identity."
+        },
+        {
+          "title": "Graphics Development",
+          "description": "Refine the designs and develop final graphics for various platforms and media."
+        },
+        {
+          "title": "Final Revisions & Delivery",
+          "description": "Make adjustments based on feedback and deliver the final designs."
+        }
+      ],
+      "serviceOutcome": [
+        "High-quality, eye-catching designs.",
+        "Brand consistency across all visuals.",
+        "Creative, customized visual solutions."
+      ],
+      "results": [
+        {
+          "percent": "80%",
+          "text": "Increase in brand recognition"
+        },
+        {
+          "percent": "95%",
+          "text": "Client satisfaction"
+        },
+        {
+          "percent": "70%",
+          "text": "Improvement in audience engagement"
+        }
+      ]
+    },
+    {
+      "title": "SEO",
+      "slug": "seo",
+      "icon": "fal fa-search",
+      "description": "Improving search engine ranking and visibility.",
+      "mainDescription": "SEO (Search Engine Optimization) focuses on optimizing website content, structure, and backlinks to improve visibility in search engine results. By implementing SEO strategies, businesses can drive organic traffic, enhance online presence, and increase their chances of ranking higher on search engines.",
+      "serviceProcess": [
+        {
+          "title": "Keyword Research",
+          "description": "Identify and target the most relevant keywords for the business."
+        },
+        {
+          "title": "On-Page Optimization",
+          "description": "Optimize website elements like content, meta tags, and images for search engines."
+        },
+        {
+          "title": "Off-Page Optimization",
+          "description": "Develop strategies for improving website authority through backlinks and social media."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Track and report on SEO performance, adjusting strategies for better results."
+        }
+      ],
+      "serviceOutcome": [
+        "Improved website ranking on search engines.",
+        "Increased organic traffic and visibility.",
+        "Better user experience and engagement."
+      ],
+      "results": [
+        {
+          "percent": "95%",
+          "text": "Increase in organic traffic"
+        },
+        {
+          "percent": "85%",
+          "text": "Improvement in search ranking"
+        },
+        {
+          "percent": "75%",
+          "text": "Higher click-through rate"
+        }
+      ]
+    },
+    {
+      "title": "Email Marketing",
+      "slug": "email-marketing",
+      "icon": "fal fa-envelope",
+      "description": "Building email campaigns for lead generation.",
+      "mainDescription": "Email marketing involves creating targeted email campaigns designed to engage potential and existing customers. By crafting compelling emails and personalizing content, businesses can drive conversions, increase customer retention, and generate qualified leads.",
+      "serviceProcess": [
+        {
+          "title": "List Building & Segmentation",
+          "description": "Develop targeted email lists based on customer behavior and preferences."
+        },
+        {
+          "title": "Email Design & Content Creation",
+          "description": "Design visually appealing emails and write engaging content for the audience."
+        },
+        {
+          "title": "Campaign Launch",
+          "description": "Launch the email campaigns to the targeted list and track the results."
+        },
+        {
+          "title": "Performance Tracking & Optimization",
+          "description": "Analyze the campaign results and optimize for better performance in future campaigns."
+        }
+      ],
+      "serviceOutcome": [
+        "Engaging, personalized email content.",
+        "Improved lead generation and conversions.",
+        "Optimized campaigns based on user behavior."
+      ],
+      "results": [
+        {
+          "percent": "80%",
+          "text": "Open rate"
+        },
+        {
+          "percent": "75%",
+          "text": "Increase in conversions"
+        },
+        {
+          "percent": "60%",
+          "text": "Customer retention rate"
+        }
+      ]
+    },
+    {
+      "title": "Ad Campaigns",
+      "slug": "ad-campaigns",
+      "icon": "fal fa-bullhorn",
+      "description": "Targeted campaigns to boost visibility.",
+      "mainDescription": "Ad campaigns are designed to increase brand awareness, drive traffic, and generate conversions. Using platforms like Google Ads and social media, we target the right audience with the right message to get the best ROI for your business.",
+      "serviceProcess": [
+        {
+          "title": "Target Audience Research",
+          "description": "Identify and segment the right audience based on demographics and behaviors."
+        },
+        {
+          "title": "Ad Design & Copywriting",
+          "description": "Create engaging and persuasive ad copy and design visually appealing ads."
+        },
+        {
+          "title": "Campaign Setup & Launch",
+          "description": "Set up the ad campaigns across relevant platforms and launch them."
+        },
+        {
+          "title": "Performance Tracking & Optimization",
+          "description": "Monitor ad performance and optimize for better ROI."
+        }
+      ],
+      "serviceOutcome": [
+        "High-performing ad campaigns.",
+        "Increased website traffic and visibility.",
+        "Higher conversion rates."
+      ],
+      "results": [
+        {
+          "percent": "90%",
+          "text": "ROI from ad campaigns"
+        },
+        {
+          "percent": "75%",
+          "text": "Increase in leads"
+        },
+        {
+          "percent": "80%",
+          "text": "Click-through rate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+    "testimonials": [
+        {
+            "name": "Aarav Mehta",
+            "position": "Startup Founder",
+            "testimonial": "Devliqly transformed our vision into a stunning digital product. Their expertise in web development and AI is unmatched!"
+        },
+        {
+            "name": "Priya Sharma",
+            "position": "E-commerce Owner",
+            "testimonial": "Our sales skyrocketed after Devliqly optimized our website and ad campaigns. Highly recommend their services!"
+        },
+        {
+            "name": "Rohan Verma",
+            "position": "Business Consultant",
+            "testimonial": "Their branding and web design gave our company a fresh, modern look. Professional, creative, and efficient!"
+        },
+        {
+            "name": "Ananya Iyer",
+            "position": "SaaS Entrepreneur",
+            "testimonial": "From concept to execution, Devliqly delivered beyond expectations. Their SEO and Google optimization boosted our online presence!"
+        },
+        {
+            "name": "Vikram Singh",
+            "position": "Digital Marketer",
+            "testimonial": "Working with Devliqly was seamless. Their AI and automation solutions saved us time and increased conversions!"
+        }
+    ]
+}

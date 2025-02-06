@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import logo from "@/assets/img/logo/logo.png"
+import NewsLetter from "../reactComponents/NewsLetter";
+---
+
+<!-- Start of Footer section
+	============================================= -->
+	<footer id="ori-footer" class="ori-footer-section footer-style-one">
+		<div class="container">
+			<div class="ori-footer-title text-center text-uppercase">
+				<h2>Get In <span>Touch</span> <i class="fas fa-arrow-right"></i></h2>
+			</div>
+			<div class="ori-footer-widget-wrapper">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="logo-widget">
+								<a href="#"><Image src={logo} alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="menu-location-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Quick Links</h2>
+								<ul>
+									<li><a href="/services">Services</a></li>
+									<li><a href="/blogs">Blog</a></li>
+									<li><a href="/portfolio">Portfolio</a></li>
+									<li><a href="/faq">FAQ</a></li>
+									<li><a href="/terms">Terms & Condition</a></li>
+									<li><a href="/privacy">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-footer-widget">
+							<div class="contact-widget ul-li-block">
+								<h2 class="widget-title text-uppercase">Contact info</h2>
+								<div class="contact-info">
+									<span>+91-7827626940</span>
+									<a href="mailto:contact.devliqly@gmail.com">contact.devliqly@gmail.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<NewsLetter client:load/>
+					
+				</div>
+			</div>
+			<div class="ori-footer-copyright d-flex justify-content-between">
+				<div class="ori-copyright-text">
+					© 2022 All Rights Reserved - <a href="/">Devliqly</a>
+				</div>
+				<div class="ori-copyright-social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!-- End of Footer section
+	============================================= -->	

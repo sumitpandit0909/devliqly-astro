@@ -1,0 +1,118 @@
+---
+import {services} from '@/config/services.json';
+---
+<!-- Start of Service  section
+	============================================= -->
+	<section id="ori-service-page-service" class="ori-service-page-service-section">
+		<div class="container">
+			<div class="ori-service-page-service-content">
+				<div class="row">
+                    {
+                        services.map((service) => (
+                            <div class="col-lg-3 col-md-6">
+                                <div class="ori-service-page-service-inner-item">
+                                    <div class="service-icon">
+                                        <i class={service.icon}></i>
+                                    </div>
+                                    <div class="service-text pera-content">
+                                        <h3><a href={`/services/${service.slug}`}>{service.title}</a></h3>
+                                        <p>{service.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+					<!-- <div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-crop-alt"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Web Development</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-drafting-compass"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">UI/UX Design</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-analytics"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Digital Marketing</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fab fa-product-hunt"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Product Design</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fab fa-joomla"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Branding & Illustration</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-mobile-alt"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Mobile Solutions</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-phone-laptop"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">App Development</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="ori-service-page-service-inner-item">
+							<div class="service-icon">
+								<i class="fal fa-envelope-open-text"></i>
+							</div>
+							<div class="service-text pera-content">
+								<h3><a href="service-single.html">Email Marketing</a></h3>
+								<p>Web development is the work involved in developing </p>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End of Service  section
+	============================================= -->

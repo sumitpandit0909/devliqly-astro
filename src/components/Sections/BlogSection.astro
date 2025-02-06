@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets";
+const { posts } = Astro.props;
+const postsPerPage = 3; // Number of posts per page
+
+// Get the current page from the URL, default to 1
+let currentPage = parseInt(Astro.url.searchParams.get('page') || '1', 10);
+if (isNaN(currentPage) || currentPage < 1) currentPage = 1; // Default to page 1 if invalid
+
+// Calculate the offset based on the current page
+const offset = (currentPage - 1) * postsPerPage;
+
+// Log for debugging purposes
+console.log("Total Posts:", posts.length);
+console.log("Current Page:", currentPage);
+console.log("Offset:", offset);
+
+// Paginate the posts
+const paginatedPosts = posts.slice(offset, offset + postsPerPage);
+
+// Calculate total pages
+const totalPages = Math.ceil(posts.length / postsPerPage);
+
+// Log for debugging purposes
+console.log("Paginated Posts:", paginatedPosts);
+console.log("Total Pages:", totalPages);
+---
+
+<!-- Blog Feed Section -->
+<section id="ori-blog-feed" class="ori-blog-feed-section position-relative">
+  <div class="container">
+    <div class="ori-blog-feed-content">
+      <div class="row relative">
+        <!-- Sidebar (unchanged) -->
+        <div class="col-lg-4">
+          <div class="ori-blog-sidebar">
+            <div class="ori-blog-widget">
+              <div class="search-widget">
+                <h3 class="widget-title">Search</h3>
+                <form action="#">
+                  <input type="text" name="search" placeholder="Search your keyword">
+                  <button><i class="fal fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <div class="ori-blog-widget">
+              <div class="recent-post-widget">
+                <h3 class="widget-title">Recent Blogs</h3>
+                {posts.slice(0, 3).map((post:any) => (
+                  <div class="ori-recent-post-item d-flex align-items-center">
+                    <div class="recent-blog-img">
+                      <Image src={post.mainImage} alt={post.title} width={100} height={100} loading="lazy" />
+                    </div>
+                    <div class="recent-blog-text">
+                      <span class="date-meta text-uppercase">{new Date(post.publishedAt).toLocaleDateString()}</span>
+                      <h3><a href={`/blogs/${post.slug.current}`}>{post.title}</a></h3>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Posts -->
+        <div class="col-lg-8">
+          <div class="ori-blog-feed-post-content">
+            <div class="ori-blog-feed-post-item-wrap">
+              {paginatedPosts.map((post:any) => (
+                <div class="ori-blog-feed-item">
+                  <div class="ori-blog-img">
+                    {post.mainImage ? (
+                      <img src={post.mainImage} alt={post.title} loading="lazy" />
+                    ) : (
+                      <p>No Image Available</p> // Placeholder if image is missing
+                    )}
+                  </div>
+                  <div class="ori-blog-text pera-content">
+                    <div class="blog-meta text-uppercase">
+                      <a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> {post.categories?.[0]?.title || "Uncategorized"}</a>
+                      <a class="blog-author" href="blog.html"><i class="fas fa-user"></i> {post.author?.name || "Unknown"}</a>
+                      <a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> {new Date(post.publishedAt).toLocaleDateString()}</a>
+                    </div>
+                    <h3><a href={`/blogs/${post.slug.current}`}>{post.title}</a></h3>
+                    <p>{post.Excerpt}</p>
+                    <a class="blog-more text-uppercase" href={`/blogs/${post.slug.current}`}>CONTINUE READING <i class="fal fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <!-- Pagination -->
+            <div class="ori-pagination-wrap ul-li">
+              <ul>
+                {currentPage > 1 && (
+                  <li><a href={`?page=${currentPage - 1}`}><i class="fal fa-arrow-left"></i></a></li>
+                )}
+                {[...Array(totalPages).keys()].map((pageIndex) => (
+                  <li >
+                    <a href={`?page=${pageIndex + 1}`} class={currentPage === pageIndex + 1 ? "active" : ""}>
+                      {pageIndex + 1}
+                    </a>
+                  </li>
+                ))}
+                {currentPage < totalPages && (
+                  <li><a href={`?page=${currentPage + 1}`}><i class="fal fa-arrow-right"></i></a></li>
+                )}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

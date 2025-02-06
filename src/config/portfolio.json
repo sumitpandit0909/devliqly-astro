@@ -1,0 +1,39 @@
+{
+    "projects":[
+        {
+            "title":"Quazire AI Studio",
+            "link":"https://quazire.com",
+            "category":"Web App"
+        },
+        {
+            "title":"BlueDolphin Logistics",
+            "link":"https://bluedolphinlogistics.com",
+            "category":"Web App"
+        },
+        {
+            "title":"Career Creation",
+            "link":"https://careercreation247.com",
+            "category":"Web App"
+        },
+        {
+            "title":"LeadStech Ai",
+            "link":"https://leadstechai.com",
+            "category":"Web App"
+        },
+        {
+            "title":"Mudramoney Finance",
+            "link":"https://mudramoneyfinance.com",
+            "category":"Web App"
+        },
+        {
+            "title":"Swastik Edu",
+            "link":"https://swastikedu.vercel.app",
+            "category":"Web App"    
+        },
+        {
+            "title":"Aquaduct Logistics Logistics",
+            "link":"https://aquaductlogistics.com",
+            "category":"Web App"
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+---
+import { client } from '../../lib/sanity';
+import {services} from '../../config/services.json';
+import {parseRichText} from "../../utils/RichTextParser.js"; 
+
+// Fetch all blog slugs for static generation
+export async function getStaticPaths() {
+  const query = `*[_type == "post"]{ "slug": slug.current }`;
+  const posts = await client.fetch(query);
+
+  return posts.map((post:any) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+// Get the slug from Astro params
+const { slug } = Astro.params;
+
+// Fetch individual blog post data
+const query = `*[_type == "post" && slug.current == $slug][0]{
+  title, 
+  "image": mainImage.asset->url, 
+  publishedAt, 
+  Excerpt, 
+  body, 
+  categories[]->{title}, 
+  author->{name}
+}`;
+const post = await client.fetch(query, { slug });
+// console.log(post);
+if (!post) {
+  throw new Error("Post not found");
+}
+import Layout from '@/layouts/Layout.astro';
+import GeneralHero from '@/components/HeroSections/GeneralHero.astro';
+import { Image } from 'astro:assets';
+const fetchData = async () => {
+    const query = `*[_type == "post"]{
+  title, 
+  slug, 
+  body, 
+  "mainImage": mainImage.asset->url, 
+  publishedAt, 
+  Excerpt, 
+  categories[]->{title}, 
+  author->{name}
+}`;
+    return await client.fetch(query);
+};
+
+const posts = await fetchData();
+
+---
+<Layout>
+    <GeneralHero title={post.title}/>
+    <!-- Start of Blog Details  section
+	============================================= -->
+	<section id="ori-blog-details" class="ori-blog-details-section position-relative">
+		<div class="container">
+			<div class="ori-blog-details-content">
+				<div class="row">
+					<div class="col-lg-8">
+						<div class="ori-blog-details-text-wrapper">
+							<div class="ori-blog-feed-item">
+								<div class="ori-blog-img">
+									<img src={post.image} alt={post.title} loading="lazy" />
+								</div>
+								<div class="ori-blog-text pera-content">
+									<div  class="blog-meta text-uppercase">
+										<a class="blog-cate" href="blog.html"><i class="fas fa-file"></i> {post.categories?.[0]?.title || "Uncategorized"}</a>
+										<a class="blog-author" href="blog.html"><i class="fas fa-user"></i> {post.author?.name || "Unknown"}</a>
+										<a class="blog-date" href="blog.html"><i class="fas fa-calendar-alt"></i> {new Date(post.publishedAt).toLocaleDateString()}</a>
+										
+									</div>
+									<h3>{post.title}</h3>
+                                    <p set:html={parseRichText(post.body)}></p>
+									</div>
+							</div>
+							<div class="ori-portfolio-details-tag-share d-flex justify-content-between align-items-center">
+								<div class="ori-portfolio-details-tag">
+									{
+                                        post.categories.map((category:any) => (
+                                            <a href="blog.html">{category.title}</a>
+                                        ))
+                                    }
+								</div>
+								<div class="ori-portfolio-details-share">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="ori-blog-sidebar">
+							<div class="ori-blog-widget">
+								<div class="search-widget">
+									<h3 class="widget-title">Search</h3>
+									<form action="#">
+										<input type="text" name="search" placeholder="Search your keyword">
+										<button><i class="fal fa-search"></i></button>
+									</form>
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="recent-post-widget">
+									<h3 class="widget-title">Recent Posts</h3>
+                                    {
+                                        posts.slice(0, 3).map((post:any) => (
+                                            <div class="ori-recent-post-item d-flex align-items-center">
+                                                <div class="recent-blog-img">
+                                                    <Image src={post.mainImage} alt={post.title} width={100} height={100} loading="lazy" />
+                                                </div>
+                                                <div class="recent-blog-text">
+                                                    <span class="date-meta text-uppercase">{new Date(post.publishedAt).toLocaleDateString()} </span>
+                                                    <h3><a href={`/blogs/${post.slug.current}`}>{post.title}</a></h3>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+
+									<!-- <div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec1.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 25,2022 </span>
+											<h3><a href="blog-single.html">We Advocate Swapping Screen Time </a></h3>
+										</div>
+									</div>
+									<div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec2.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 28,2022 </span>
+											<h3><a href="blog-single.html">Zechsal Magnesium flakes especially</a> </h3>
+										</div>
+									</div>
+									<div class="ori-recent-post-item d-flex align-items-center">
+										<div class="recent-blog-img">
+											<img src="assets/img/blog/rec3.png" alt="">
+										</div>
+										<div class="recent-blog-text">
+											<span class="date-meta text-uppercase">July 21,2022 </span>
+											<h3><a href="blog-single.html">A Simple Social Media Marketing Checklist</a> </h3>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<div class="ori-blog-widget">
+								<div class="service-widget ul-li-block">
+									<h3 class="widget-title">Services</h3>
+									<ul>
+										{
+											services.map((service,index) => (
+											<li><a href={`/services/${service.slug}`}> {service.title}</a></li>
+											))
+										}
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div> 
+		</div>
+	</section>	
+<!-- End of Blog Details  section
+	============================================= -->	
+</Layout>

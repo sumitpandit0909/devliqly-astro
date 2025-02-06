@@ -1,0 +1,74 @@
+---
+import { Image } from "astro:assets";
+import {projects} from "@/config/portfolio.json"
+import pro1 from "@/assets/img/portfolio/aquaduct.png"
+import pro2 from "@/assets/img/portfolio/bluedolphin.png"
+import pro3 from "@/assets/img/portfolio/career.png"
+import pro4 from "@/assets/img/portfolio/leadstech.png"
+import pro5 from "@/assets/img/portfolio/mudramoney.png"
+import pro6 from "@/assets/img/portfolio/quazire.png"
+import pro7 from "@/assets/img/portfolio/swastik.png"
+
+---
+
+<!-- Start of Portfolio  section
+	============================================= -->	
+	<section id="ori-portfolio-feed" class="ori-portfolio-feed-section position-relative">
+		<div class="container">
+			<!-- <div class="ori-portfolio-filter-btn ul-li text-center">
+				<ul id="filters" class="nav-gallery">
+					<li class="filtr-button filtr-active" data-filter="all">see all</li>
+					<li class="filtr-button" data-filter="1">Business</li>
+					<li class="filtr-button" data-filter="2">Development</li>
+					<li class="filtr-button" data-filter="3">Web Design </li>
+					<li class="filtr-button" data-filter="4">ui/ux </li>
+					<li class="filtr-button" data-filter="5">TECHNOLOGY</li>
+				</ul>
+			</div> -->
+			<div class="ori-portfolio-feed-item-wrapper filtr-container row">
+				{
+					projects.map((project, index) => {
+					  const images = [pro6, pro2, pro3, pro4, pro5, pro7, pro1];
+					  const image = images[index % images.length]; // Prevent index out of bounds
+				  
+					  return (
+						<div class="col-lg-4 col-sm-6 filtr-item item" data-category="1, 3, 4" data-sort="Busy streets" >
+						  <div class="ori-portfolio-item position-relative">
+							<div class="portfolio-img">
+							  <Image src={image} alt={project.title} class="img-fluid" /> 
+							</div>
+							<div class="portfolio-text">
+							  <span class="port-category text-uppercase">
+								<a href="portfolio.html">{project.category}</a>
+							  </span>
+							  <h3>
+								<a href={project.link} target="_blank">{project.title}</a>
+							  </h3>
+							</div>
+						  </div>
+						</div>
+					  );
+					})
+				  }
+				  
+			
+			</div>
+			<div  class="ori-portfolio-more-btn text-center">
+				<div class="ori-btn-1 text-uppercase">
+					<a href="#">load more projects</a>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div> 
+		</div>
+	</section>
+<!-- End of Portfolio  section
+	============================================= -->	

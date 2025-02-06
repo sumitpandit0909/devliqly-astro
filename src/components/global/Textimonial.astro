@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+import vector from "@/assets/img/vector/tst-vector1.png"
+import prev from "@/assets/img/vector/prev.png"
+import next from "@/assets/img/vector/next.png"
+import {testimonials} from "@/config/testimonials.json"
+---
+
+<!-- Start of Testimonial section
+	============================================= -->
+	<section id="ori-testimonial-1" class="ori-testimonial-section-1 position-relative">
+		<div class="ori-vector-bg position-absolute wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+			<Image src={vector} alt="">
+		</div>
+		<div class="container">
+			<div class="ori-testimonial-content-1 position-relative">
+				<div class="ori-testimonial-title text-center text-uppercase">
+					<h3>What our Client say</h3>
+				</div>
+				<div class="ori-testimonial-slider-1">
+					{
+						testimonials.map((testimonial,index) => (
+						<div class="ori-testimonial-item-area">
+							<div class="ori-testimonial-item-1">
+								<div class="ori-testimonial-text text-center pera-content">
+									<p>{testimonial.testimonial}</p>
+									<div class="ori-testimonial-author text-center text-uppercase">
+										<h4>{testimonial.name}</h4>
+										<span>{testimonial.position}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						))
+					}
+
+					<!-- <div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ori-testimonial-item-area">
+						<div class="ori-testimonial-item-1">
+							<div class="ori-testimonial-text text-center pera-content">
+								<p>“Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+								</p>
+								<div class="ori-testimonial-author text-center text-uppercase">
+									<h4>Hahimlam Dirat</h4>
+									<span>ui/ux Designer</span>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="carousel_nav">
+					<button type="button" class="testi-left_arrow">
+                        <Image src={prev} alt="">
+                    </button>
+					<button type="button" class="testi-right_arrow">
+                        <Image src={next} alt="">
+                    </button>
+				</div>
+			</div>
+		</div>
+		<div class="line_animation">
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+			<div class="line_area"></div>
+		</div>
+	</section>				
+<!-- End of Testimonial section
+	============================================= -->	 
