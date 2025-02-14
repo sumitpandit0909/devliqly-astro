@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+sitemap: https://www.devliqly.com//sitemap.xml
