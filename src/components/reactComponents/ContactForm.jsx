@@ -20,7 +20,7 @@ const ContactForm = () => {
 
     try {
       setLoader(true);
-      const response = await fetch("http://localhost:8000/api/v1/contact", {
+      const response = await fetch("https://devliqly-backend.onrender.com/api/v1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

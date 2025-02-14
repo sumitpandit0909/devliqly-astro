@@ -12,7 +12,7 @@ const NewsLetter = () => {
     e.preventDefault();
     try {
       setLoader(true);
-      const response = await fetch("http://localhost:8000/api/v1/newsletter", {
+      const response = await fetch("https://devliqly-backend.onrender.com/api/v1/newsletter", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
