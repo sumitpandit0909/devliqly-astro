@@ -3,8 +3,13 @@ import Layout from "@/layouts/Layout.astro"
 import services from "../../config/services.json"
 import GeneralHero from "@/components/HeroSections/GeneralHero.astro";
 import { Image } from "astro:assets";
-import ser from "@/assets/img/about/serd.png"
+import web1 from "@/assets/img/service/web1.jpg";
+import ai1 from "@/assets/img/service/ai1.png";
+import seo1 from '@/assets/img/service/seo1.png';
+import email1 from "@/assets/img/service/email1.jpg";
+import graphic1 from  '@/assets/img/service/graphic1.jpeg';
 import Quote from "@/components/reactComponents/Quote.jsx";
+let image = web1;
 
 export async function getStaticPaths() {
   return services.services.map((service: { title: string }) => ({
@@ -19,6 +24,20 @@ const service = services.services.find(
   s => s.title.toLowerCase().replace(/ /g, '-') === slug
 );
 
+if(service?.slug === "web-development"){
+  image = web1;
+}else if(service?.slug === "ai-development"){
+  image = ai1;
+  }else if(service?.slug === "seo"){
+    image = seo1;
+    }else if(service?.slug === "email-marketing"){
+      image = email1;
+      }else if(service?.slug === "graphic-designing"){
+        image = graphic1;
+		}else{
+			image = web1;
+		}
+
 ---
 <Layout>
 	<GeneralHero title={service?.title}/>
@@ -32,7 +51,7 @@ const service = services.services.find(
 						<div class="ori-service-details-content">
 							<div class="ori-about-play-area position-relative">
 								<div class="ori-about-play-img">
-									<Image src={ser} alt="">
+									<Image src={image} alt="">
 								</div>
 								
 							</div>

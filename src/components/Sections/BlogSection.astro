@@ -49,7 +49,7 @@ console.log("Total Pages:", totalPages);
                 {posts.slice(0, 3).map((post:any) => (
                   <div class="ori-recent-post-item d-flex align-items-center">
                     <div class="recent-blog-img">
-                      <Image src={post.mainImage} alt={post.title} width={100} height={100} loading="lazy" />
+                      <Image src={post.mainImage} alt={post.title} width={100} height={100}  loading="lazy" />
                     </div>
                     <div class="recent-blog-text">
                       <span class="date-meta text-uppercase">{new Date(post.publishedAt).toLocaleDateString()}</span>
