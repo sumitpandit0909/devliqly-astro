@@ -1,29 +1,29 @@
 ---
 import { Image } from "astro:assets";
 const { posts } = Astro.props;
-const postsPerPage = 3; // Number of posts per page
+//const postsPerPage = 3; // Number of posts per page
 
 // Get the current page from the URL, default to 1
-let currentPage = parseInt(Astro.url.searchParams.get('page') || '1', 10);
-if (isNaN(currentPage) || currentPage < 1) currentPage = 1; // Default to page 1 if invalid
+//let currentPage = parseInt(Astro.url.searchParams.get('page') || '1', 10);
+//if (isNaN(currentPage) || currentPage < 1) currentPage = 1; // Default to page 1 if invalid
 
 // Calculate the offset based on the current page
-const offset = (currentPage - 1) * postsPerPage;
+//const offset = (currentPage - 1) * postsPerPage;
 
 // Log for debugging purposes
-console.log("Total Posts:", posts.length);
-console.log("Current Page:", currentPage);
-console.log("Offset:", offset);
+//console.log("Total Posts:", posts.length);
+//console.log("Current Page:", currentPage);
+//console.log("Offset:", offset);
 
 // Paginate the posts
-const paginatedPosts = posts.slice(offset, offset + postsPerPage);
+//const paginatedPosts = posts.slice(offset, offset + postsPerPage);
 
 // Calculate total pages
-const totalPages = Math.ceil(posts.length / postsPerPage);
+//const totalPages = Math.ceil(posts.length / postsPerPage);
 
 // Log for debugging purposes
-console.log("Paginated Posts:", paginatedPosts);
-console.log("Total Pages:", totalPages);
+//console.log("Paginated Posts:", paginatedPosts);
+//console.log("Total Pages:", totalPages);
 ---
 
 <!-- Blog Feed Section -->
@@ -32,7 +32,7 @@ console.log("Total Pages:", totalPages);
     <div class="ori-blog-feed-content">
       <div class="row relative">
         <!-- Sidebar (unchanged) -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 relative">
           <div class="ori-blog-sidebar">
             <div class="ori-blog-widget">
               <div class="search-widget">
@@ -66,7 +66,7 @@ console.log("Total Pages:", totalPages);
         <div class="col-lg-8">
           <div class="ori-blog-feed-post-content">
             <div class="ori-blog-feed-post-item-wrap">
-              {paginatedPosts.map((post:any) => (
+              {posts.map((post:any) => (
                 <div class="ori-blog-feed-item">
                   <div class="ori-blog-img">
                     {post.mainImage ? (
@@ -90,7 +90,7 @@ console.log("Total Pages:", totalPages);
             </div>
 
             <!-- Pagination -->
-            <div class="ori-pagination-wrap ul-li">
+            <!-- <div class="ori-pagination-wrap ul-li">
               <ul>
                 {currentPage > 1 && (
                   <li><a href={`?page=${currentPage - 1}`}><i class="fal fa-arrow-left"></i></a></li>
@@ -106,10 +106,25 @@ console.log("Total Pages:", totalPages);
                   <li><a href={`?page=${currentPage + 1}`}><i class="fal fa-arrow-right"></i></a></li>
                 )}
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<style>
+/* Make sidebar fixed */
+.ori-blog-feed-post-content {
+  position: sticky;
+  /* top: 20vh; Adjust based on your header */
+  /* width: 25%; Adjust based on layout */
+  height: 120vh;
+  overflow-y: auto;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
+}
+
+
+
+</style>
