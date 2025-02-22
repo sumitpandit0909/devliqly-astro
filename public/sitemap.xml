@@ -1,137 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<script src="chrome-extension://hoklmmgfnpapgjgcpechhaamimifchmp/frame_ant/frame_ant.js"/>
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.devliqly.com/</loc>
-  <lastmod>2025-02-19T16:22:53+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.devliqly.com/</loc>
+<lastmod>2025-02-22T15:33:22+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services</loc>
-  <lastmod>2025-02-19T16:22:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services</loc>
+<lastmod>2025-02-22T15:33:22+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/web-development</loc>
-  <lastmod>2025-02-19T16:22:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/web-development</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/game-development</loc>
-  <lastmod>2025-02-19T16:22:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/game-development</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/ai-development</loc>
-  <lastmod>2025-02-19T16:22:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/ai-development</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/web-designing</loc>
-  <lastmod>2025-02-19T16:22:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/web-designing</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/graphic-designing</loc>
-  <lastmod>2025-02-19T16:22:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/graphic-designing</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/seo</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/seo</loc>
+<lastmod>2025-02-22T15:33:23+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/email-marketing</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/email-marketing</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/ad-campaigns</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/ad-campaigns</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/about</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/about</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/portfolio</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/portfolio</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs</loc>
-  <lastmod>2025-02-19T16:22:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/contact</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/contact</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/mission</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/mission</loc>
+<lastmod>2025-02-22T15:33:24+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs/big-tech-s-usd320b-ai-spend-defies-efficiency-race</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs/big-tech-s-usd320b-ai-spend-defies-efficiency-race</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs/superhuman-introduces-ai-powered-categorization-to-reduce-spammy-emails-in-your-inbox</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs/superhuman-introduces-ai-powered-categorization-to-reduce-spammy-emails-in-your-inbox</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs/could-alibaba-s-qwen-ai-power-the-next-generation-of-iphones-in-china</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs/deepseek-to-open-source-agi-research-amid-privacy-concerns</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/faq</loc>
-  <lastmod>2025-02-19T16:22:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/faq</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/terms</loc>
-  <lastmod>2025-02-19T16:22:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/terms</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/privacy</loc>
-  <lastmod>2025-02-19T16:22:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/privacy</loc>
+<lastmod>2025-02-22T15:33:25+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/index.html</loc>
-  <lastmod>2025-02-19T16:22:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/index.html</loc>
+<lastmod>2025-02-22T15:33:26+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/services/index.html</loc>
-  <lastmod>2025-02-19T16:22:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/services/index.html</loc>
+<lastmod>2025-02-22T15:33:26+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs/the-role-of-machine-learning-in-enhancing</loc>
-  <lastmod>2025-02-19T16:22:57+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs/could-alibaba-s-qwen-ai-power-the-next-generation-of-iphones-in-china</loc>
+<lastmod>2025-02-22T15:33:26+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://www.devliqly.com/blogs/index.html</loc>
-  <lastmod>2025-02-19T16:22:58+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.devliqly.com/blogs/the-role-of-machine-learning-in-enhancing</loc>
+<lastmod>2025-02-22T15:33:26+00:00</lastmod>
+<priority>0.64</priority>
 </url>
-
-
+<url>
+<loc>https://www.devliqly.com/blogs/index.html</loc>
+<lastmod>2025-02-22T15:33:26+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
