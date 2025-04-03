@@ -1,8 +1,13 @@
 {
     "projects":[
         {
+            "title":"Bhutani Infra Noida",
+            "link":"https://bhutani-infra.vercel.app/",
+            "category":"Web App"
+        },
+        {
             "title":"Quazire AI Studio",
-            "link":"https://quazire.com",
+            "link":"https://quazire-astro.vercel.app/",
             "category":"Web App"
         },
         {
